@@ -24,10 +24,9 @@
 
 ;;; Code:
 
-(use-package mediawiki)
-(use-package ox-mediawiki
-  :config
-  (custom-set-variables '(org-export-show-temporary-export-buffer t)))
+(require 'mediawiki)
+(require 'ox-mediawiki)
+(custom-set-variables '(org-export-show-temporary-export-buffer t))
 
 (defcustom wiki-pack-credentials-file "~/.authinfo.gpg"
   "Default configuration file.")
